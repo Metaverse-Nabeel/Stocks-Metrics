@@ -42,7 +42,7 @@ const HomePage = () => {
     if (filterArray.length === 0) {
       return (
         <div>
-          Error, Currency Not Found
+          Error! Crypto Currency Not Found!
         </div>
       );
     }
