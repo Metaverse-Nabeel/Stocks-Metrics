@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const API_URL = 'https://api.coinstats.app/public/v1/coins?skip=0&limit=30&currency=USD';
+const API_URL = 'https://api.coinstats.app/public/v1/coins/';
 
 export const getDetails = createAsyncThunk(
   'getDetails',
@@ -17,7 +17,7 @@ export const getDetails = createAsyncThunk(
 );
 
 const initialState = {
-  cryptoDetails: [],
+  cryptoDetails: {},
   isLoading: false,
 };
 
@@ -30,7 +30,7 @@ const detailsSlice = createSlice({
     }));
 
     builder.addCase(getDetails.fulfilled, (state, action) => ({
-      ...state, isLoading: false, cryptoDetails: action.payload,
+      ...state, isLoading: false, cryptoDetails: action.payload.coin,
     }));
   },
 });

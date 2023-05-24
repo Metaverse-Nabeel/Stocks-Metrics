@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { Routes, Route } from 'react-router';
 import { Provider } from 'react-redux';
 import Navigation from './components/Navigation';
@@ -13,7 +14,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/details/:id" element={<DetailsPage />} />
+          <Route path="/details/:cryptoId" element={<DetailsPage />} />
         </Routes>
       </Provider>
     </>
