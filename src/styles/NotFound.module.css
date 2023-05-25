@@ -1,0 +1,17 @@
+/* 404 Error */
+.container {
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.image404 {
+  width: 20rem;
+  height: 20rem;
+  background-color: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(120px);
+  border-radius: 0.5rem;
+}

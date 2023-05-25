@@ -1,0 +1,44 @@
+/* Footer */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkPink);
+  color: aliceblue;
+  padding: 3%;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+  }
+}
