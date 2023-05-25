@@ -78,6 +78,7 @@
 - **[Home page made to display the list of top 50 currencies]**
 - **[Details page displays the crypto coins card]**
 - **[Website Design Made for the App]**
+- **[Jest Test for the App]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
