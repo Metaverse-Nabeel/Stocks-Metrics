@@ -1,11 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <br/>
-
-  <h1><b>Crypto Angels</b></h1>
-
+<img src="./src/assets/logo.svg" alt="Logo" width="150px">
+  <h2><b>Crypto Angels</b></h2>
 </div>
+   <h4><b>Readme</b></h4>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -16,6 +15,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Video Demo](#project-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -86,7 +86,14 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://crypto-angels.vercel.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Presentation -->
+## Project Presentation <a name="project-presentation"></a>
+
+- [Video Demo](https://www.loom.com/share/0d844a5d154b49dca8d2f679e26eb9ed)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -174,6 +181,10 @@ If you like this project you can follow me and give the project a star.
 **Nelson Sakwa on Behance**
 
 Original design idea by:  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
+**Coin Ranking API**
+
+API provide by:  [Coin Ranking](https://developers.coinranking.com/api/documentation/coins)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
