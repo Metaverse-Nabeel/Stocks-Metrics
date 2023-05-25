@@ -54,3 +54,16 @@
 .cryptoDiv:nth-child(even) {
   background-color: var(--pink);
 }
+
+@media screen and (min-width: 1024px) {
+  .cryptoTitle {
+    font-size: 1.5em;
+  }
+
+  .cryptoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 5%;
+  }
+}

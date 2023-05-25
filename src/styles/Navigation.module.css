@@ -1,9 +1,11 @@
 /* Navigation */
 nav {
-  margin-bottom: 10%;
   color: #fff;
-  display: flex;
   background-color: var(--darkPink);
+}
+
+.wrapper {
+  width: 100vw;
 }
 
 .container {
@@ -41,4 +43,26 @@ nav {
   align-items: center;
   cursor: pointer;
   width: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  .logoContainer a {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logoContainer a {
+    font-size: 2em;
+  }
+
+  .backLink {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logoContainer a {
+    font-size: 3em;
+  }
 }

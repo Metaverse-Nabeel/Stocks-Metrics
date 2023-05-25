@@ -11,7 +11,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav>
+      <nav className={Navbar.wrapper}>
         <div className={Navbar.container}>
           <div
             className={Navbar.backLink}
