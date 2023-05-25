@@ -1,10 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { v4 as cryptoID } from 'uuid';
 import { useNavigate } from 'react-router';
 import { getCrypto } from '../redux/cryptoSlice/cryptoSlice';
-import Crypto from '../components/cryptoCurrency/Crypto';
+import Crypto from '../components/Crypto';
+import NotFound from '../components/404NotFound';
+import homepage from '../styles/HomePage.module.css';
 
 const HomePage = () => {
   const fetchStatus = useRef(true);
@@ -21,8 +22,8 @@ const HomePage = () => {
   }, []);
 
   const handleClick = (item) => {
-    if (item.id) {
-      navigate(`details/${item.id}`);
+    if (item.uuid) {
+      navigate(`details/${item.uuid}`);
     }
   };
 
@@ -41,23 +42,24 @@ const HomePage = () => {
   const result = () => {
     if (filterArray.length === 0) {
       return (
-        <div>
-          Error! Crypto Currency Not Found!
-        </div>
+        <NotFound />
       );
     }
     return filterArray.map((item) => (
       <>
         <div
-          key={cryptoID()}
+          key={item.uuid}
           aria-hidden="true"
           onClick={() => handleClick(item)}
+          className={homepage.cryptoDiv}
         >
           <Crypto
-            img={item.icon}
+            key={item.uuid}
+            img={item.iconUrl}
             name={item.name}
             price={item.price}
-            priceChange={item.priceChange1w}
+            priceChange={item.change}
+            symbol={item.symbol}
           />
         </div>
       </>
@@ -66,16 +68,16 @@ const HomePage = () => {
 
   return (
     <>
-      <div>
+      <div className={homepage.searchContainer}>
         <input
           type="text"
           onChange={(e) => setCryptoSearched(e.target.value)}
           placeholder="Type here..."
-          className="searchInput"
           value={cryptoSearched}
         />
       </div>
-      <div className="coinsContainer flex limit">{result()}</div>
+      <h3 className={homepage.cryptoTitle}>Top 50 Crypto Currencies</h3>
+      <div className={homepage.cryptoContainer}>{result()}</div>
     </>
   );
 };

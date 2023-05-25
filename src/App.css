@@ -1,4 +1,4 @@
 body {
-  background-color: aliceblue;
-  color: navy;
+  background-color: var(--pink);
+  font-family: "Montserrat", sans-serif;
 }

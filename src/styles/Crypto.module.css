@@ -1,0 +1,43 @@
+/* CURRENCY CARD */
+.cryptoArrow {
+  text-align: end;
+  padding: 5% 5% 0 0;
+}
+
+.cryptoLogoContainer {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.cryptoLogo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.cryptoCardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2%;
+  margin-bottom: 2%;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.text {
+  margin-right: 0.3rem;
+}
