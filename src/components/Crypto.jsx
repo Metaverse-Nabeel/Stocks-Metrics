@@ -1,7 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies */
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { PropTypes } from 'prop-types';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 import crypto from '../styles/Crypto.module.css';
 
 const Crypto = ({

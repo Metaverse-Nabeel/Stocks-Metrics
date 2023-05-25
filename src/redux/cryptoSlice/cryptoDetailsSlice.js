@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const API_URL = 'https://api.coinranking.com/v2/coin/';

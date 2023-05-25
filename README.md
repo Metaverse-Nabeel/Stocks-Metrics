@@ -4,7 +4,8 @@
 <img src="./src/assets/logo.svg" alt="Logo" width="150px">
   <h2><b>Crypto Angels</b></h2>
 </div>
-   <h4><b>Readme</b></h4>
+
+<h4 align="center"><b>Readme</b></h4>
 
 <!-- TABLE OF CONTENTS -->
 
