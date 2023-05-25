@@ -3,7 +3,7 @@
 <div align="center">
   <br/>
 
-  <h1><b>Stocks Metrics</b></h1>
+  <h1><b>Crypto Angels</b></h1>
 
 </div>
 
@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Stocks Metrics <a name="about-project"></a>
+# 📖 Crypto Angels <a name="about-project"></a>
 
-**Stocks Metrics** "This app is working with the data from the Stocks API. The application will allow users to get insights of Stocks metrics."
+**Crypto Angels** "Welcome to Crypto Angels! Crypto Angels is a SPA (Single Page Application) where you cand find information about the best 50 crypto currecies. This application fetches the information from the API, and displays as per the figma design provided. The user can get details for a particular crypto currency as well."
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -72,6 +72,12 @@
 
 - **[Setup with create-react-app]**
 - **[Setup linters for React/Redux]**
+- **[Setup Basic Structure of App]**
+- **[Mobile First design made]**
+- **[Coin Ranking API is used for Crypto Currency]**
+- **[Home page made to display the list of top 50 currencies]**
+- **[Details page displays the crypto coins card]**
+- **[Website Design Made for the App]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,6 +169,11 @@ If you like this project you can follow me and give the project a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 **Microverse**
+
+**Nelson Sakwa on Behance**
+
+Original design idea by:  [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
