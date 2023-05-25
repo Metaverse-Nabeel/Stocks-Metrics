@@ -1,3 +1,4 @@
+import React from 'react';
 import NF from '../styles/NotFound.module.css';
 import NFimage from '../assets/Error404.svg';
 

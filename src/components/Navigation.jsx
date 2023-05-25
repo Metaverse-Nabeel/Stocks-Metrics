@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+import React from 'react';
 import { useNavigate } from 'react-router';
 import { IoChevronBackSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
