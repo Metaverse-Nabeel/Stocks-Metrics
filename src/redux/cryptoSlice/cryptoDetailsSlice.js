@@ -1,18 +1,20 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const API_URL = 'https://api.coinstats.app/public/v1/coins/';
+const API_URL = 'https://api.coinranking.com/v2/coin/';
 
-export const getDetails = createAsyncThunk(
-  'getDetails',
+export const getOneCrypto = createAsyncThunk(
+  'getOneCrypto',
   async (id) => {
-    try {
-      const res = await fetch(`${API_URL}${id}`);
-      const data = await res.json();
-      return data;
-    } catch (error) {
-      return error;
-    }
+    const options = {
+      headers: {
+        'x-access-token': 'coinranking19798f5481d660fd1481e710c61e9bbbc541ae241740a36e',
+      },
+    };
+
+    const response = await fetch(`${API_URL}${id}`, options);
+    const result = await response.json();
+    return result.data.coin;
   },
 );
 
@@ -25,12 +27,12 @@ const detailsSlice = createSlice({
   name: 'cryptoDetails',
   initialState,
   extraReducers: (builder) => {
-    builder.addCase(getDetails.pending, (state) => ({
+    builder.addCase(getOneCrypto.pending, (state) => ({
       ...state, isLoading: true,
     }));
 
-    builder.addCase(getDetails.fulfilled, (state, action) => ({
-      ...state, isLoading: false, cryptoDetails: action.payload.coin,
+    builder.addCase(getOneCrypto.fulfilled, (state, action) => ({
+      ...state, isLoading: false, cryptoDetails: action.payload,
     }));
   },
 });

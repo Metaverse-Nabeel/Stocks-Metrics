@@ -1,0 +1,44 @@
+/* Navigation */
+nav {
+  margin-bottom: 10%;
+  color: #fff;
+  display: flex;
+  background-color: var(--darkPink);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+.backLink {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.backLink:hover {
+  transform: scale(1.2);
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer a img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 25%;
+}

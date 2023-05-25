@@ -6,6 +6,7 @@ import HomePage from './routes/homePage';
 import DetailsPage from './routes/detailsPage';
 import store from './redux/store';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/details/:cryptoId" element={<DetailsPage />} />
+          <Route path="/details/:cryptoID" element={<DetailsPage />} />
         </Routes>
+        <Footer />
       </Provider>
     </>
   );
